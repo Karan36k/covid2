@@ -1,0 +1,238 @@
+body {
+    background: #FDEDD0
+}
+
+
+.main {
+    height: 80vh;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.map-container {
+    height: 500px;
+}
+
+.header-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#map {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.chart-container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.chart-container .col {
+    background-color: #EFF2F6;
+    border-radius: 12px;
+}
+
+.linear-chart {
+    height: 100%;
+}
+
+.title-container h2 {
+    color: #fc3c3c;
+    margin-bottom: 0;
+}
+
+.title-container h4 {
+    text-transform: uppercase;
+    color: #CACBCF;
+}
+
+.stats-container .card {    
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 8px -4px rgba(0,0,0, 0.5);
+    overflow: hidden;
+}
+
+.stats-container .card-body {
+    padding: 1rem;
+}
+
+.stats-container .card-title {
+    color: #695d5c;
+    font-weight: 400;
+    font-weight: bolder;
+}
+
+.stats-container .card-subtitle {
+    font-weight: 600;
+}
+
+.stats-container .total {
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+.side-panel-container {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: white;
+    box-shadow: 0 0 8px -4px rgba(0,0,0, 0.5);
+    padding-top: 15px;
+    -webkit-text-stroke-width: medium;
+}
+
+
+.total-number {
+    color: #cc1034;
+}
+.card:hover{
+    background-color: black;
+}
+
+.recovered-number {
+    color: #7fd922;
+}
+
+.deaths-number {
+    color: #FA5575;
+}
+
+.cases-table-container h4, .chart-container h4 {
+    color: #6A5D5D;
+    font-weight: 400;
+}
+
+.country-data .table td {
+    padding: 0.5rem;
+    border: none;
+}
+
+.tab-selection {
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.cases .tab-selection {
+    background-color: #cc1034;
+}
+
+.recovered .tab-selection {
+    background-color: #7fd922;
+}
+
+.deaths .tab-selection {
+    background-color: #FA5575;
+}
+::-webkit-scrollbar{
+    width: 11px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    height: 100px;
+}
+::-webkit-scrollbar-thumb{
+    background: #303030
+}
+input[type="checkbox"]
+{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+.check{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: #212121;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+}
+input[type="checkbox"]:checked ~ .check
+{
+    background: #fff;
+    box-shadow: 0 0 0 4000px #212121;
+}
+.check::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+input[type="checkbox"]:checked ~ .check::before{
+    transform: translateX(-50px);
+}
+.check::after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #212121;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    transition: 0.5s;
+    transform: translateX(50px);
+}
+input[type="checkbox"]:checked ~ .check::after{
+    transform: translateX(0px);
+}
+
+.check{
+    padding-left: 50px;
+    margin-left: 135px;
+    bottom: 25px;
+}
+.news-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.dark-mode{
+    font-size: x-large;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bolder;
+}
+#table-data img{
+    border-radius: 10px;
+    height: 60px;
+    width: 90px;
+}
+.info button{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #FDEDD0;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    outline: none;
+    text-decoration: none;
+}
+.info button{
+    outline: none;
+    text-decoration: none;
+}
